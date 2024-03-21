@@ -6,7 +6,6 @@
     <title>Document</title>
     <style>
         .container{
-            display: flex;
             align-items: center;
             justify-content: center;
 
@@ -45,8 +44,6 @@
 <body>
     <div class="container">
      <div class="box">Boxes</div>
-     <div id="box" class="box">Boxes</div>
-     <div class="box">Boxes</div>
      <div class="box">Boxes</div>
      <button class="btn">click</button>
     </div>
@@ -54,7 +51,6 @@
     let btn=document.querySelector(".btn")
 btn.addEventListener("click", ()=>{
   document.querySelectorAll(".box").forEach(e=>{
-    // e.stopPropagation()
     e.innerHTML="Teri gaand me 56 meter ka lund";
 })
   })
